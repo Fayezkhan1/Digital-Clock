@@ -1,0 +1,127 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+} */
+html, body, div, span, applet, object, iframe,
+h1,h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    display: grid;
+    place-items: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* width: 100%; */
+  }
+ ul{
+    list-style-type: none;
+    margin: 25px 0px;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    line-height: 70px;
+    font-size: 18px;
+   
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:999 ;
+    height: 85px;
+    width: 445px;
+    border-radius: 100px;
+    text-align: center;
+    background: #1b1b1b;
+
+    /* display: flexbox;
+    place-items: center;
+    place-content: center;
+    padding-left: 85px;
+    padding-top: 2.3rem;
+    
+    margin-right: auto; */
+}
+.wrapper{
+    height: 100px;
+    width: 460px;
+    background: linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+    
+    border-radius: 100px;
+    animation: animate 1.5s linear infinite;
+   
+    
+
+}   
+
+#time{
+    line-height: 85px;
+    color:white;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: animate 1.5s linear infinite;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
